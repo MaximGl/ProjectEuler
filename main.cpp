@@ -5,10 +5,12 @@
 #include <iostream>
 using namespace std;
 
-#include "Problem90.h"
+#define chDIMOF(x) (sizeof(x)/sizeof(x[0]))
+
+#include "Problem93.h"
 
 int main()
 {
-	Problem90();
+	Problem93();
 	return 0;
 }

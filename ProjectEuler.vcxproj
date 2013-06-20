@@ -155,6 +155,7 @@
   <ItemGroup>
     <ClInclude Include="Problem88.h" />
     <ClInclude Include="Problem90.h" />
+    <ClInclude Include="Problem93.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

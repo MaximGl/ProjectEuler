@@ -1,6 +1,4 @@
 #pragma once
-//
-//
 //Each of the six faces on a cube has a different digit (0 to 9) written on it; the same is done to a second cube.
 //By placing the two cubes side-by-side in different positions we can form a variety of 2-digit numbers.
 //
@@ -38,15 +36,6 @@ public:
 			else if (arrDigits[i] == 9)
 				m_arrDigits[6] = 6;
 		}
-	}
-	int compare(const Cube &c) const
-	{
-		for (int i = 0; i < 7; i++)
-		{
-			if (m_arrDigits[i] != c.m_arrDigits[i])
-				return m_arrDigits[i] < c.m_arrDigits[i] ? -1 : 1;
-		}
-		return 0;
 	}
 	bool HasDigit(char ch) const
 	{
@@ -115,13 +104,6 @@ public:
 		}
 		return true;
 	}
-	bool operator<(const DoubleCube &dc) const
-	{
-		int i = m_c1.compare(dc.m_c1);
-		if (i)
-			return i < 0;
-		return m_c2.compare(dc.m_c2) < 0;
-	}
 	void Print() const
 	{
 		cout << "Cube1 = ";
@@ -148,25 +130,15 @@ public:
 
 void Problem90()
 {
-	set<DoubleCube> res;
 	char minCube[6] = {0, 1, 2, 3, 4, 5};
 	Cube c1(minCube);
 	DoubleCube dc(c1, c1);
-//	size_t next = 0;
+	int iCount = 0;
 	for (int i = 0; dc.IsValid(); i++)
 	{
 		if (dc.IsCanRepresentSquares())
-		{
-			res.insert(dc);
-			// Just for debug
-			//if (res.size() > next)
-			//{
-			//	cout << res.size() << endl;
-			//	dc.Print();
-			//	next += 1;
-			//}
-		}
+			iCount++;
 		dc = dc.GetNextCubes();
 	}
-	cout << res.size() << endl;
+	cout << iCount << endl;
 }
