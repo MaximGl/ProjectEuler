@@ -19,13 +19,6 @@
 //
 //What is the sum of all the minimal product-sum numbers for 2≤k≤12000?
 
-#include <boost/thread.hpp>
-#include <vector>
-#include <set>
-#include <limits>
-#include <iostream>
-using namespace std;
-
 //Use brute force algorithm
 class ComputeSum
 {
