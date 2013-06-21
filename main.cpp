@@ -7,10 +7,10 @@ using namespace std;
 
 #define chDIMOF(x) (sizeof(x)/sizeof(x[0]))
 
-#include "Problem93.h"
+#include "Problem94.h"
 
 int main()
 {
-	Problem93();
+	Problem94();
 	return 0;
 }
