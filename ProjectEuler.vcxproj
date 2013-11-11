@@ -68,21 +68,21 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\My Projects\boost_1_53_0\stage\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\My Projects\boost_1_53_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\My Projects\boost_1_51_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\My Projects\boost_1_51_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\My Projects\boost_1_53_0\stage\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\My Projects\boost_1_53_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\My Projects\boost_1_51_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\My Projects\boost_1_51_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>C:\My Projects\boost_1_53_0;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\My Projects\boost_1_53_0\stage\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\My Projects\boost_1_51_0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\My Projects\boost_1_51_0\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -140,7 +140,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,7 +153,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Primes.h" />
     <ClInclude Include="Problem100.h" />
+    <ClInclude Include="Problem108_110.h" />
     <ClInclude Include="Problem88.h" />
     <ClInclude Include="Problem90.h" />
     <ClInclude Include="Problem93.h" />

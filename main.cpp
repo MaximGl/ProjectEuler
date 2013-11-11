@@ -6,11 +6,12 @@
 using namespace std;
 
 #define chDIMOF(x) (sizeof(x)/sizeof(x[0]))
+typedef unsigned long long QWORD;
 
-#include "Problem100.h"
+#include "Problem108_110.h"
 
 int main()
 {
-	Problem100();
+	Problem110();
 	return 0;
 }
