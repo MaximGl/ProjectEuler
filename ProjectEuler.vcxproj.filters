@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Primes.h" />
+    <ClInclude Include="Problem88.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem90.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem93.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem94.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem95.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem98.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem100.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem108_110.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+    <ClInclude Include="Problem179.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Problems">
+      <UniqueIdentifier>{dd8a4dbc-ef6e-407b-a1b1-f08a7f68f786}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
