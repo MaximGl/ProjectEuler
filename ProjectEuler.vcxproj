@@ -159,6 +159,7 @@
     <ClInclude Include="Primes.h" />
     <ClInclude Include="Problem100.h" />
     <ClInclude Include="Problem108_110.h" />
+    <ClInclude Include="Problem119.h" />
     <ClInclude Include="Problem123.h" />
     <ClInclude Include="Problem179.h" />
     <ClInclude Include="Problem88.h" />

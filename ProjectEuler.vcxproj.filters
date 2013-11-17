@@ -35,6 +35,9 @@
     <ClInclude Include="Problem123.h">
       <Filter>Problems</Filter>
     </ClInclude>
+    <ClInclude Include="Problem119.h">
+      <Filter>Problems</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Problems">
